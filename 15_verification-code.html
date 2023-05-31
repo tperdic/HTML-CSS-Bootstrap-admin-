@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Squadtrip</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">	
+<link rel= "stylesheet" href="css/bootstrap-datepicker.min.css" />
+<link href="css/nouislider.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+	
+	<section class="main">
+		
+		<div class="content pb-50">
+			<div class="container-fluid">
+				<div class="row">
+					
+					
+					<div class="col-md-6 col-sm-12 offset-md-3">
+						
+						<div class="verification">
+							
+								<h2>Enter the code from your device</h2>
+								
+								<span class="ver_t">Verification code</span>
+								
+								<form>
+									<div class="ver_holder">
+										<div class="input-group">
+										  <input type="text" class="form-control ver" data-maxlength="1">
+										  <input type="text" class="form-control ver" data-maxlength="1">
+										  <input type="text" class="form-control ver" data-maxlength="1">
+										</div>		
+									</div>							
+									<span>-</span>
+									<div class="ver_holder">
+										<div class="input-group">
+										  <input type="text" class="form-control ver" data-maxlength="1">
+										  <input type="text" class="form-control ver" data-maxlength="1">
+										  <input type="text" class="form-control ver" data-maxlength="1">
+										</div>
+									</div>
+								</form>
+							
+								<p>Didn’t receive a code? <a href="#">Send code again</a>
+								</p>
+							
+							<a href="#" class="underline">Use a different email or number</a>
+								
+								
+						</div><!-- /white_holder -->
+								
+						
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+				</div>
+			</div>
+		</div>
+		
+		
+		
+	</section>
+	
+	
+
+<script src="js/jquery-3.6.0.min.js"></script>	
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src= "js/bootstrap-datepicker.js" ></script>
+<script src= "js/jquery.jscrollpane.min.js" ></script>
+<script src="js/scripts.js"></script>
+<script src="js/nouislider.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $(".ver").keydown(function (e) {
+        var code = e.which;
+        $this=$(this);
+        if ($this.val().length >=$this.data("maxlength") && code != 8) {
+            if($this.val().length>$this.data("maxlength")){
+                $this.val($this.val().substring(0,1));
+            }
+            $this.next(".ver").focus();
+        }
+        if($this.val().length == 0 && code == 8) {
+            $this.prev(".ver").focus();
+        }
+    });
+});
+</script>
+</body>
+</html>

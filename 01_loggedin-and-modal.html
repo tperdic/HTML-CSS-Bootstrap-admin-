@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Squadtrip</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel= "stylesheet" href="css/bootstrap-datepicker.min.css" />	
+<link href="css/nouislider.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body class="home">
+	<div class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-auto logo">
+				  	<a href="#"><img src="img/logo.svg" alt="logo"/></a>
+				</div>
+				<div class="trigger"></div>
+				<div class="col menu">
+					<ul>
+						<li><a href="#">Dashboard</a></li>
+						<li><a href="#">Company Stats</a></li>
+						<li><a href="#">Help</a></li>
+					</ul>
+				</div>
+				<div class="col-md-auto menu_right">
+					<ul>
+						<li><div class="user">
+								<span>Club Paradise Bahamas</span><img src="https://picsum.photos/id/1041/32/32" alt="img">
+							</div>
+							<ul>
+								<li><a href="#">The first item</a></li>
+								<li><a href="#">Item 2</a></li>
+								<li><a href="#">Item 3</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<section class="main">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center pt-100 intro">
+					<img src="img/add_trips.svg" alt="img"/>
+					<h1>You haven’t added any trips yet</h1>
+					<p>Would you like to start now?</p>
+					<a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#myTrip">Add Trip</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- Modal -->
+	<div class="modal fade" id="myTrip" tabindex="-1" aria-labelledby="myTripLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered trip_modal">
+		<div class="modal-content trip_name">
+			
+			<p>Before we begin...</p>
+			<h2>What’s the name of your trip?</h2>
+			<form name="myForm" onsubmit="return validateForm()" method="post">
+				<input type="text" name="trip_name">
+				<div id="response"></div>
+				<div class="overflow">
+					<input class="btn" type="submit" value="Start Building My Trip"><a href="#" class="btn btn-white" data-bs-dismiss="modal">Go back</a>
+				</div>
+			</form>
+
+		</div>
+	  </div>
+	</div>
+	
+	
+	
+
+<script src="js/jquery-3.6.0.min.js"></script>	
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src= "js/bootstrap-datepicker.js" ></script>
+<script src= "js/jquery.jscrollpane.min.js" ></script>
+<script src="js/scripts.js"></script>
+<script src="js/nouislider.js"></script>
+<script>
+function validateForm() {
+  let x = document.forms["myForm"]["trip_name"].value;
+  if (x == "") {
+	document.getElementById('response').innerHTML="Please enter the trip name";
+    return false;
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,267 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Squadtrip</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">	
+<link rel= "stylesheet" href="css/bootstrap-datepicker.min.css" />
+<link href="css/nouislider.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-auto logo">
+				  	<a href="#"><img src="img/logo.svg" alt="logo"/></a>
+				</div>
+				<div class="trigger"></div>
+				<div class="col menu">
+					<ul>
+						<li><a href="#">Dashboard</a></li>
+						<li><a href="#">Company Stats</a></li>
+						<li><a href="#">Help</a></li>
+					</ul>
+				</div>
+				<div class="col-md-auto menu_right">
+					<ul>
+						<li><div class="user">
+								<span>Sky Residents</span><img src="https://picsum.photos/id/1041/32/32" alt="img">
+							</div>
+							<ul>
+								<li><a href="#">The first item</a></li>
+								<li><a href="#">Item 2</a></li>
+								<li><a href="#">Item 3</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<section class="main">
+		<div class="container">
+			<div class="row">
+				<div class="col breadcrums">
+					<a href="#">Trip to Barbados</a> <span>Trip Builder</span>
+				</div>
+			</div>
+		</div>
+		
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					
+					<div class="col col-md-3 col-sm-12 pb-50">
+						<div class="builder_menu">
+							<div class="builder_title">
+								<img src="img/builder-logo.svg" alt="Trip Builder"/> Trip Builder
+							</div>
+							<ul>
+								<li><a href="#">Basics</a></li>
+								<li><a href="#" class="active">Packages</a></li>
+								<li><a href="#">Add-ons</a></li>
+								<li><a href="#">Guest Management</a></li>
+								<li><a href="#">Registration Questions</a></li>
+								<li><a href="#">Payments & Refunds</a></li>
+							</ul>
+						</div>
+					</div>
+					
+					
+					<div class="col-md-9 col-sm-12">
+						<form>
+						<div class="builder_content">
+							<div class="step">Step 2 of 6</div>
+							<h1>Trip Packages</h1>
+							<p>Set up different travel packages as options for guests</p>
+							
+							
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-md-6 col-sm-12 ">
+										
+										<div class="box_shadow">
+										
+										<div class="module mt-0">
+											<h3>What is your trip package called?</h3>
+
+											<div class="input_wrap short">
+												<div class="inputs">
+													<input type="text" class="form-control" placeholder="e.g. Bungalow">
+												</div>	
+											</div>						
+										</div>
+								
+										<div class="module">
+											<h3>Describe the trip package</h3>
+											<p>Try to be as transparent as possible with the description</p>
+
+											<div class="input_wrap">
+												<div class="inputs">
+													<textarea class="form-control" placeholder="Start typing..." rows="3"></textarea>
+												</div>	
+											</div>							
+										</div>
+								
+								
+										<div class="module">
+											<h3>Trip package dates</h3>
+
+											<div class="input_wrap short inp2">
+												<div class="inputs inp-icon __calendar">
+													<input type="text" class="form-control datepicker" placeholder="From">
+												</div>
+												<div class="inputs inp-icon __calendar">
+													<input type="text" class="form-control datepicker" placeholder="To">
+												</div>		
+											</div>					
+										</div>
+										
+										
+										<div class="module">
+											<h3>Trip package cost</h3>
+
+											<div class="input_wrap short">
+												<div class="inputs">
+													<input type="text" class="form-control dollar">
+												</div>	
+											</div>						
+										</div>
+										
+								
+										<div class="module">
+											<h3>How many people can book this trip package?</h3>
+											
+											<div class="input_wrap short">
+												<div class="inputs">
+													<div class="form-check">
+													  <input checked class="form-check-input" type="radio" name="people" id="people1">
+													  <label class="form-check-label" for="people1">
+														Unlimited
+													  </label>
+													</div>
+													<div class="form-check">
+													  <input class="form-check-input" type="radio" name="people" id="people2">
+													  <label class="form-check-label" for="people2">
+														Set a Limit
+													  </label>
+													</div>
+												</div>	
+												<div class="inputs mt-15">
+													<input disabled type="text" class="form-control" placeholder="Quantity">
+												</div>
+											</div>		
+										</div>
+										
+								
+										<div class="module">
+											<h3>Upload a photo (Optional)</h3>
+
+											<div class="drop-zone">
+												<span class="drop-zone__prompt">
+												<img src="img/upload.svg" alt=""/><br><strong>Drag and drop</strong><br>your files here, or <i>browse</i></span>
+												<input type="file" name="uploadfile" class="drop-zone__input">
+
+											</div>							
+										</div>
+											
+										</div>	
+										<div class="submits">
+											<input class="btn" type="submit" value="+ Add another">
+										</div>
+									</div>	
+										
+									
+									
+									<div class="col-md-5 col-sm-12 packages">
+										
+										<div class="package box_shadow">
+											<div class="package_img">
+												<img src="https://picsum.photos/id/1041/368/198" alt="img">
+											</div>
+											<h2>Bungalow</h2>
+											<p>Here is the description text. Lorem ipsum doesn’t belong here, so I’ll tell you that this option is the best one you could have chosen. Relax in the bungalow and enjoy unlimited pina coladas.</p>
+											<div class="package_data">
+												<span><span>Dates: </span>10/4/22 - 12/4/22</span>
+												<span><span>Cost: </span>$ 5,300</span>
+												<span><span>Quantity: </span>8</span>
+											</div>
+											<div class="context_menu">
+												<ul>
+													<li><div class="dots"></div>
+														<ul>
+															<li><a href="#">Delete</a></li>
+															<li><a href="#">Duplicate</a></li>
+														</ul>
+													</li>
+												</ul>
+											</div>
+										</div>
+										
+										<div class="package box_shadow">
+											<div class="package_img">
+												<img src="https://picsum.photos/id/1041/368/198" alt="img">
+											</div>
+											<h2>Triple Occupancy</h2>
+											<p>Here is the description text. Lorem ipsum doesn’t belong here, so I’ll tell you that this option is the best one you could have chosen. Relax in the bungalow and enjoy unlimited pina coladas.</p>
+											<div class="package_data">
+												<span><span>Dates: </span>10/4/22 - 12/4/22</span>
+												<span><span>Cost: </span>$ 5,300</span>
+												<span><span>Quantity: </span>Unlimited</span>
+											</div>
+											
+											<div class="context_menu">
+												<ul>
+													<li><div class="dots"></div>
+														<ul>
+															<li><a href="#">Delete</a></li>
+															<li><a href="#">Duplicate</a></li>
+														</ul>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+								
+								
+								
+						</div><!-- /builder_content -->
+						
+						<div class="submits">
+							<a href="#" class="btn btn-white">Skip</a>
+							<input class="btn" type="submit" value="Save & Continue">
+						</div>
+								
+								
+						</form>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+	</section>
+
+	
+	
+	
+
+<script src="js/jquery-3.6.0.min.js"></script>	
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src= "js/bootstrap-datepicker.js" ></script>
+<script src= "js/jquery.jscrollpane.min.js" ></script>
+<script src="js/scripts.js"></script>
+<script src="js/nouislider.js"></script>
+</body>
+</html>

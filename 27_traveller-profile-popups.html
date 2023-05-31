@@ -1,0 +1,404 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Squadtrip</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">	
+<link rel= "stylesheet" href="css/bootstrap-datepicker.min.css" />
+<link href="css/nouislider.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+	
+<section class="main">
+
+	<div class="content pb-50">
+		<div class="container-fluid">
+			<div class="row">
+
+
+				<div class="col-sm-12 ">
+						<br><br>
+						<a href="#" data-bs-toggle="modal" data-bs-target="#makenewpayment">Make new payment</a>
+						<br>
+						<a href="#" data-bs-toggle="modal" data-bs-target="#reviewnewpayment">Review new payment</a>
+						<br>
+						<a href="#" data-bs-toggle="modal" data-bs-target="#paymentsuccessful">Payment successful</a>
+						<br>
+						<a href="#" data-bs-toggle="modal" data-bs-target="#retrypayment">Retry payment</a>
+						<br>
+						<a href="#" data-bs-toggle="modal" data-bs-target="#updatecard">Update card</a>
+						<br>
+						<a href="#" data-bs-toggle="modal" data-bs-target="#pruchaseaddon">Purchase addon</a>
+						<br>
+						<a href="#" data-bs-toggle="modal" data-bs-target="#reviewpayment">Review payment</a>
+						<br>
+						<a href="#" data-bs-toggle="modal" data-bs-target="#contactorganizer">Contact the organizer</a>
+						<br>
+						<a href="#" data-bs-toggle="modal" data-bs-target="#messagesent">Message sent</a>
+						<br>
+						<a href="#" data-bs-toggle="modal" data-bs-target="#areyousure">Are you sure</a>
+				</div>					
+			</div>
+		</div>
+	</div>		
+</section>
+	
+	
+	
+<div class="modal fade" id="areyousure" tabindex="-1" aria-labelledby="areyousure" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered popups_w ">
+	<div class="modal-content popups">
+		
+		<a href="#" class="close" data-bs-dismiss="modal"></a>
+		
+		<div class="popup_content centered">
+			
+			<img src="img/exclamation.svg" alt="img"/><br><br>
+			<h2>Are You Sure?</h2>
+			<p>You are cancelling your reservation and future payments. <br>
+Please note that you might not receive a refund, so please read the <a href="#">refund policy</a>. You can contact the organizer for further questions.<br><br>Type “cancel” to confirm</p>
+			
+			<form>
+				<div class="inputs narrow mb-10">
+					<input type="text" class="form-control centered">
+				</div>
+				<br><a href="#" class="btn btn-white">Nevermind</a> <input class="btn" type="submit" value="Yes, Cancel Reservation">
+			</form>
+			
+		</div><!-- /popup_content -->
+	</div>
+  </div>
+</div>
+	
+	
+	
+<div class="modal fade" id="messagesent" tabindex="-1" aria-labelledby="messagesent" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered popups_w ">
+	<div class="modal-content popups">
+		
+		<a href="#" class="close" data-bs-dismiss="modal"></a>
+		
+		<div class="popup_content centered pt-30 ">
+			
+			<img src="img/Success.svg" alt="success"/><br><br>
+			<h2>Message Sent!</h2>
+			
+		</div><!-- /popup_content -->
+	</div>
+  </div>
+</div>
+	
+	
+	
+<div class="modal fade" id="contactorganizer" tabindex="-1" aria-labelledby="contactorganizer" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered popups_w ">
+	<div class="modal-content popups">
+		
+		<a href="#" class="close" data-bs-dismiss="modal"></a>
+		
+		<div class="popup_content ">
+			
+			<h2 class="centered mb-30">Contact the Organizer</h2>
+			
+			<div class="sendmail">
+				<form>
+
+					Email to: <strong>travelorganizer@xyz.com</strong><br>
+					
+					
+					<div class="inputs bottom_line input-group-sm form-inline">
+						<label class="form-label mb-0 mt-10">Subject:</label>
+						<input type="text" class="form-control" placeholder="">
+					</div>
+					<br><br>
+					
+					<textarea class="form-control" placeholder="Start typing your message here..." rows="6"></textarea>
+					<br>	
+					
+					<span class="note mt-10 mb-30 centered">All replies will be sent to your registered email address</span>
+					
+					<div class="centered">					
+						<input class="btn" type="submit" value="Send Message">
+					</div>
+					
+				</form>
+			</div>
+			
+		</div><!-- /popup_content -->
+	</div>
+  </div>
+</div>
+	
+	
+	
+<div class="modal fade" id="reviewpayment" tabindex="-1" aria-labelledby="reviewpayment" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered popups_w ">
+	<div class="modal-content popups">
+		
+		<a href="#" class="close" data-bs-dismiss="modal"></a>
+		
+		<div class="popup_content centered">
+			
+			<h2>Review Payment</h2>
+			<p>You’re about to make a payment of
+			<span class="amount">$400</span>
+			via Credit Card ending *3342 </p>
+			
+			<a href="#" class="underline">Change Card</a><br><br>
+			
+			<form>
+				<a href="#" class="btn btn-white">Go Back</a> <input class="btn" type="submit" value="Pay Now">
+			</form>
+			
+		</div><!-- /popup_content -->
+	</div>
+  </div>
+</div>
+	
+	
+	
+<div class="modal fade" id="pruchaseaddon" tabindex="-1" aria-labelledby="pruchaseaddon" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered popups_w ">
+	<div class="modal-content popups">
+		
+		<a href="#" class="close" data-bs-dismiss="modal"></a>
+		
+		<div class="popup_content centered">
+			
+			<h2>Purchase an Add-on</h2>
+			<p>You’re about to purchase this add-on:</p>
+			
+			<div class="addon_box mb-30">
+				<div class="add1">
+					<h4>Airport Shuttle</h4>
+					<p>Airport Transfer</p>
+				</div>
+				<div class="add2">
+					<h4>Details</h4>
+					<p>Two-Way Airport Transfer<br><a href="#" data-bs-toggle="modal" data-bs-target="#readmore">Read more...</a></p>
+				</div>
+				<div class="add3">
+					<span>+ $200</span>
+				</div>
+			</div>
+			
+			<p>The summary of your trip will update once purchased</p>
+			
+			<input class="btn" type="submit" value="Review Payment">
+			
+		</div><!-- /popup_content -->
+	</div>
+  </div>
+</div>
+	
+	
+	
+<div class="modal fade" id="updatecard" tabindex="-1" aria-labelledby="updatecard" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered popups_w ">
+	<div class="modal-content popups">
+		
+		<a href="#" class="close" data-bs-dismiss="modal"></a>
+		
+		<div class="popup_content ">
+			
+			<h2 class="centered">Update Card Details</h2>
+			<div class="card_data mt-30">										
+										
+				<div class="w50">
+					<p><strong>Card Information</strong></p>
+
+					<div class="input_wrap ">
+						<div class="inputs">
+							<label class="small">Cardholders Name</label>
+							<input type="text" class="form-control ">
+						</div>		
+					</div>
+
+					<div class="input_wrap ">
+						<div class="inputs">
+							<label class="small">Card Number</label>
+							<input type="text" class="form-control ">
+						</div>		
+					</div>
+
+					<div class="input_wrap inp2">
+						<div class="inputs">
+							<label class="small">Expiry</label>
+							<input type="text" class="form-control ">
+						</div>
+						<div class="inputs">
+							<label class="small">CVV</label>
+							<input type="text" class="form-control ">
+						</div>		
+					</div>											
+				</div>
+
+				<div class="w50">
+					<p><strong>Billing Information</strong></p>
+
+					<div class="input_wrap ">
+						<div class="inputs">
+							<label class="small">Billing Address</label>
+							<input type="text" class="form-control ">
+						</div>		
+					</div>
+
+					<div class="input_wrap inp2">
+						<div class="inputs">
+							<label class="small">City</label>
+							<input type="text" class="form-control ">
+						</div>
+						<div class="inputs">
+							<label class="small">State</label>
+							<input type="text" class="form-control ">
+						</div>		
+					</div>
+
+					<div class="input_wrap inp2">
+						<div class="inputs">
+							<label class="small">Zip Code</label>
+							<input type="text" class="form-control ">
+						</div>
+						<div class="inputs">
+							<label class="small">Country</label>
+							<input type="text" class="form-control ">
+						</div>		
+					</div>
+					<div class="input_wrap">
+						<div class="form-check">
+						  <input class="form-check-input" type="checkbox" name="sv" id="sv">
+						  <label class="form-check-label " for="sv">
+							Save as residential address
+						  </label>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<span class="note mt-20 mb-30 centered">Note: You are about to change your card details. This will now be the card that future payments will be charged against. <br><br>Do you want to confirm?</span>
+			
+			<br>
+			<div class="centered">
+				<a href="#" class="btn btn-white">Cancel</a> <input class="btn" type="submit" value="Update Card">
+			</div>
+		</div><!-- /popup_content -->
+	</div>
+  </div>
+</div>
+	
+	
+	
+<div class="modal fade" id="retrypayment" tabindex="-1" aria-labelledby="retrypayment" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered popups_w ">
+	<div class="modal-content popups">
+		
+		<a href="#" class="close" data-bs-dismiss="modal"></a>
+		
+		<div class="popup_content centered">
+			
+			<h2>Retry Payment</h2>
+			<p>You’re about to make a payment of
+			<span class="amount">$400</span>
+			via Credit Card ending *3342 </p>
+			
+			<a href="#" class="underline">Change Card</a><br><br>
+			
+			<form>
+				<a href="#" class="btn btn-white">Go Back</a> <input class="btn" type="submit" value="Pay Now">
+			</form>
+			
+		</div><!-- /popup_content -->
+	</div>
+  </div>
+</div>
+	
+	
+	
+<div class="modal fade" id="paymentsuccessful" tabindex="-1" aria-labelledby="paymentsuccessful" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered popups_w ">
+	<div class="modal-content popups">
+		
+		<a href="#" class="close" data-bs-dismiss="modal"></a>
+		
+		<div class="popup_content centered pt-30 ">
+			
+			<img src="img/Success.svg" alt="success"/><br><br>
+			<h2>Payment Successful</h2>
+			
+		</div><!-- /popup_content -->
+	</div>
+  </div>
+</div>
+	
+	
+	
+<div class="modal fade" id="reviewnewpayment" tabindex="-1" aria-labelledby="reviewnewpayment" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered popups_w ">
+	<div class="modal-content popups">
+		
+		<a href="#" class="close" data-bs-dismiss="modal"></a>
+		
+		<div class="popup_content centered">
+			
+			<h2>Review New Payment</h2>
+			<p>You’re about to make a payment of
+			<span class="amount">$400</span>
+			via Credit Card ending *3342 </p>
+			
+			<a href="#" class="underline">Change Card</a><br><br>
+			
+			<form>
+				<a href="#" class="btn btn-white">Go Back</a> <input class="btn" type="submit" value="Pay Now">
+			</form>
+			
+		</div><!-- /popup_content -->
+	</div>
+  </div>
+</div>
+	
+	
+	
+<div class="modal fade" id="makenewpayment" tabindex="-1" aria-labelledby="makenewpayment" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered popups_w ">
+	<div class="modal-content popups">
+		
+		<a href="#" class="close" data-bs-dismiss="modal"></a>
+		
+		<div class="popup_content centered">
+			
+			<h2>Make New Payment</h2>
+			<p>You’re about to make a new payment. <br>Please write the amount you’d like to pay</p>
+			
+			<strong>Amount</strong>
+			
+			<form>
+				<div class="inputs inp-icon dollar2 bottom_line">
+					<input type="text" class="form-control" placeholder="Enter amount">
+				</div>
+				<br>
+				<input class="btn" type="submit" value="Review Payment">
+			</form>
+			
+		</div><!-- /popup_content -->
+	</div>
+  </div>
+</div>
+	
+
+<script src="js/jquery-3.6.0.min.js"></script>	
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src= "js/bootstrap-datepicker.js" ></script>
+<script src= "js/jquery.jscrollpane.min.js" ></script>
+<script src="js/scripts.js"></script>
+<script src="js/nouislider.js"></script>
+</body>
+</html>

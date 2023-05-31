@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Squadtrip</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">	
+<link rel= "stylesheet" href="css/bootstrap-datepicker.min.css" />
+<link href="css/nouislider.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-auto logo">
+				  	<a href="#"><img src="img/logo.svg" alt="logo"/></a>
+				</div>
+				<div class="trigger"></div>
+				<div class="col menu">
+					<ul>
+						<li><a href="#">Dashboard</a></li>
+						<li><a href="#">Company Stats</a></li>
+						<li><a href="#">Help</a></li>
+					</ul>
+				</div>
+				<div class="col-md-auto menu_right">
+					<ul>
+						<li><div class="user">
+								<span>Sky Residents</span><img src="https://picsum.photos/id/1041/32/32" alt="img">
+							</div>
+							<ul>
+								<li><a href="#">The first item</a></li>
+								<li><a href="#">Item 2</a></li>
+								<li><a href="#">Item 3</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<section class="main">
+		<div class="container">
+			<div class="row">
+				<div class="col breadcrums">
+					<a href="#">Trip to Barbados</a> <span>Trip Builder</span>
+				</div>
+			</div>
+		</div>
+		
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					
+					<div class="col-md-3 col-sm-12 pb-50">
+						<div class="builder_menu">
+							<div class="builder_title">
+								<img src="img/builder-logo.svg" alt="Trip Builder"/> Trip Builder
+							</div>
+							<ul>
+								<li><a href="#">Basics</a></li>
+								<li><a href="#">Packages</a></li>
+								<li><a href="#" class="active">Add-ons</a></li>
+								<li><a href="#">Guest Management</a></li>
+								<li><a href="#">Registration Questions</a></li>
+								<li><a href="#">Payments & Refunds</a></li>
+							</ul>
+						</div>
+					</div>
+					
+					
+					<div class="col-md-9 col-sm-12">
+						<form>
+						<div class="builder_content">
+							<div class="step">Step 3 of 6</div>
+							<h1>Trip Add-ons</h1>
+							<p>Don’t know what your add-ons are yet? No worries, you can return to this later</p>
+							
+							<span class="sub">Select the following add-ons that will be offered to guests as ‘extras’.</span> 
+							
+
+							<div class="container-fluid">
+								<div class="row">
+									
+									<div class="accordion accordion-flush" id="accordion1">
+
+										<div class="col-md-12 box_shadow addons mt-0 accordion-item" >
+
+											<div class="addon_title accordion-header" id="heading1">
+												<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+												<h4><span>Package name:</span> Bungalow</h4></button>	
+											</div>
+
+											<div id="collapse1" class="addon_content accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#accordion1">
+												<div class="accordion-body">
+													<div class="addon_holder">
+														<a class="addon flights" href="#"><div><span></span></div><span>Flights</span></a>
+														<a class="addon meals" href="#"><div><span></span></div><span>Meals</span></a>
+														<a class="addon airportshuttle" href="#"><div><span></span></div><span>Airport Shuttle</span></a>
+														<a class="addon excursions" href="#"><div><span></span></div><span>Excursions</span></a>
+														<a class="addon other" href="#"><div><span></span></div><span>Other</span></a>
+													</div>
+												</div>
+											</div>
+										</div>	
+									</div>
+									
+									
+									<div class="accordion accordion-flush" id="accordion2">
+
+										<div class="col-md-12 box_shadow addons mt-0 accordion-item" >
+
+											<div class="addon_title accordion-header" id="heading2">
+												<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+												<h4><span>Package name:</span> Triple occupamcy</h4></button>	
+											</div>
+
+											<div id="collapse2" class="addon_content accordion-collapse collapse " aria-labelledby="heading2" data-bs-parent="#accordion2">
+												<div class="accordion-body">
+													<div class="addon_holder">
+														<a class="addon flights" href="#"><div><span></span></div><span>Flights</span></a>
+														<a class="addon meals" href="#"><div><span></span></div><span>Meals</span></a>
+														<a class="addon airportshuttle" href="#"><div><span></span></div><span>Airport Shuttle</span></a>
+														<a class="addon excursions" href="#"><div><span></span></div><span>Excursions</span></a>
+														<a class="addon other" href="#"><div><span></span></div><span>Other</span></a>
+													</div>
+												</div>
+											</div>
+										</div>	
+									</div>	
+									
+									
+									
+										
+								</div>
+							</div>
+								
+								
+								
+						</div><!-- /builder_content -->
+						
+						<div class="submits">
+							<a href="#" class="btn btn-white">Skip</a>
+							<input class="btn" type="submit" value="Save & Continue">
+						</div>
+								
+								
+						</form>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+	</section>
+
+	
+	
+	
+
+<script src="js/jquery-3.6.0.min.js"></script>	
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src= "js/bootstrap-datepicker.js" ></script>
+<script src= "js/jquery.jscrollpane.min.js" ></script>
+<script src="js/scripts.js"></script>
+<script src="js/nouislider.js"></script>
+</body>
+</html>

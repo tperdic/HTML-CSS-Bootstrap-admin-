@@ -1,0 +1,309 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Squadtrip</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">	
+<link rel= "stylesheet" href="css/bootstrap-datepicker.min.css" />
+<link href="css/nouislider.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-auto logo">
+				  	<a href="#"><img src="img/logo.svg" alt="logo"/></a>
+				</div>
+				<div class="trigger"></div>
+				<div class="col menu">
+					<ul>
+						<li><a href="#">Dashboard</a></li>
+						<li><a href="#">Company Stats</a></li>
+						<li><a href="#">Help</a></li>
+					</ul>
+				</div>
+				<div class="col-md-auto menu_right">
+					<ul>
+						<li><div class="user">
+								<span>Sky Residents</span><img src="https://picsum.photos/id/1041/32/32" alt="img">
+							</div>
+							<ul>
+								<li><a href="#">The first item</a></li>
+								<li><a href="#">Item 2</a></li>
+								<li><a href="#">Item 3</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<section class="main">
+		<div class="container">
+			<div class="row">
+				<div class="col breadcrums">
+					<a href="#">Trip to Barbados</a> <span>Trip Builder</span>
+				</div>
+			</div>
+		</div>
+		
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					
+					<div class="col col-md-3 col-sm-12 pb-50">
+						<div class="builder_menu">
+							<div class="builder_title">
+								<img src="img/builder-logo.svg" alt="Trip Builder"/> Trip Builder
+							</div>
+							<ul>
+								<li><a href="#">Basics</a></li>
+								<li><a href="#">Packages</a></li>
+								<li><a href="#">Add-ons</a></li>
+								<li><a href="#">Guest Management</a></li>
+								<li><a href="#">Registration Questions</a></li>
+								<li><a href="#" class="active">Payments & Refunds</a></li>
+							</ul>
+						</div>
+					</div>
+					
+					
+					<div class="col col-md-9 col-sm-12">
+						<form>
+						<div class="builder_content">
+							<div class="step">Step 6 of 6</div>
+							<h1>Payments & Refunds</h1>
+							<p>This is where you can focus on payment plans, refunds and deposits.</p>
+							
+							<span class="sub">Select the trip package to adjust its pricing and refund policy</span> 
+							
+							
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-md-12">
+										
+										
+										<div class="scroll">
+											<div class="scroll_content">
+												
+												<a href="#" class="package box_shadow active">
+													<div class="package_img">
+														<img src="https://picsum.photos/id/1041/368/198" width="240" height="129" alt="img">
+													</div>
+													<h2>Bungalow</h2>
+													<div class="package_data">
+														<span><span>Price </span>excl. Add-ons</span>
+														<span class="price"><span>$</span> 5,300 <span>USD</span> </span>
+													</div>
+												</a>
+												
+												<a href="#" class="package box_shadow">
+													<div class="package_img">
+														<img src="https://picsum.photos/id/1041/368/198" width="240" height="129" alt="img">
+													</div>
+													<h2>Bungalow</h2>
+													<div class="package_data">
+														<span><span>Price </span>excl. Add-ons</span>
+														<span class="price"><span>$</span> 5,300 <span>USD</span> </span>
+													</div>
+												</a>
+												
+												<a href="#" class="package box_shadow">
+													<div class="package_img">
+														<img src="https://picsum.photos/id/1041/368/198" width="240" height="129" alt="img">
+													</div>
+													<h2>Bungalow</h2>
+													<div class="package_data">
+														<span><span>Price </span>excl. Add-ons</span>
+														<span class="price"><span>$</span> 5,300 <span>USD</span> </span>
+													</div>
+												</a>
+												
+												<a href="#" class="package box_shadow">
+													<div class="package_img">
+														<img src="https://picsum.photos/id/1041/368/198" width="240" height="129" alt="img">
+													</div>
+													<h2>Bungalow</h2>
+													<div class="package_data">
+														<span><span>Price </span>excl. Add-ons</span>
+														<span class="price"><span>$</span> 5,300 <span>USD</span> </span>
+													</div>
+												</a>
+												
+												
+												
+												
+												
+												
+											</div>			
+										</div>
+								
+										
+										
+									</div>	
+									
+									
+									<div class="col-md-6 col-sm-12 pt-75">
+										
+										
+										<div class="addon_detail_title payments" >
+											<h5>Bungalow Payment Options</h5>
+										</div>
+								
+										<div class="module visible mt-0">
+											<h3>Set the deposit amount</h3>
+
+											<div class="input_wrap mb-15">
+												<div class="inputs">
+													<div class="form-group slider_holder mb-15">	
+														<div id="deposit"></div>
+													</div>
+												</div>	
+											</div>	
+											
+											<div class="input_wrap pt-15">
+												<div class="inputs form-inline">
+													<label class="form-label" for="price">Or add it manually:</label>
+													<input type="text" id="price" class="form-control dollar">
+												</div>	
+											</div>
+										</div>
+								
+										<div class="module">
+											<h3>What payment options will guests have?</h3>
+											<p>Select all that apply:</p>	
+											
+											<div class="input_wrap payment_radio">
+												<div class="inputs">
+													<div class="form-check_wrap">
+														<div class="form-check">
+														  <input class="form-check-input" type="radio" name="people" id="people5">
+														  <label class="form-check-label" for="people5">
+															<strong>Pay in Installments</strong><br>Regular monthly payments, set to a date of your choice. We suggest charging $100 for this option.
+														  </label>
+														</div>
+													</div>
+													
+													
+													<div class="form-check_wrap">
+														<div class="form-check">
+														  <input class="form-check-input" type="radio" name="people" id="people6">
+														  <label class="form-check-label" for="people6">
+															<strong>Pay in Full</strong><br>A one-off payment in full. <br>Some people choose this to avoid fees.
+														  </label>
+														</div>
+													</div>
+												</div>	
+											</div>												
+										</div>
+								
+										<div class="module">
+											<h3>Refund Policy *</h3>
+											
+											<div class="input_wrap">
+												<div class="inputs">
+													<textarea class="form-control" placeholder="Start typing..." rows="3"></textarea>
+												</div>	
+											</div>
+										</div>
+										
+									</div>
+									
+									
+									<div class="col-md-5 col-sm-12 pt-150">
+										
+										
+										<div class="total">
+											<div class="total_title">
+												<span class="total_total">TOTAL</span>
+												<span class="total_excl">excl. Add-ons</span>
+												<span class="total_price">$ 5,500</span>
+											</div>
+											<div class="total_content">
+												<div class="total_content_data">
+													<strong>Package Cost</strong>
+													<span>$ 5,300</span>
+												</div>
+												<div class="total_content_data">
+													<strong>Deposit</strong>
+													<span>$ 100</span>
+												</div>
+												<div class="total_content_data">
+													<strong>Additional Cost</strong>
+													<span>$ 100</span>
+												</div>
+											</div>
+										</div>
+								
+										
+										
+									</div>
+										
+									
+									
+								</div>
+							</div>
+								
+								
+								
+						</div><!-- /builder_content -->
+						
+						<div class="submits">
+							<a href="#" class="btn btn-white">Skip</a>
+							<input class="btn" type="submit" value="Save & Continue">
+						</div>
+								
+								
+						</form>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+	</section>
+
+	
+	
+	
+
+<script src="js/jquery-3.6.0.min.js"></script>	
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src= "js/bootstrap-datepicker.js" ></script>
+<script src= "js/jquery.jscrollpane.min.js" ></script>
+<script src="js/scripts.js"></script>
+<script src="js/nouislider.js"></script>
+<script>
+var handlesSlider = document.getElementById('deposit');
+noUiSlider.create(handlesSlider, {
+    start: [0],
+	tooltips: true,
+	step: 10,
+    range: {
+        'min': [0],
+        'max': [1000]
+    },
+	format: {
+        // 'to' the formatted value. Receives a number.
+        to: function (value) {
+            return value;
+        },
+        // 'from' the formatted value.
+        // Receives a string, should return a number.
+        from: function (value) {
+            return Number(value.replace(',-', ''));
+        }
+    }
+});	
+</script>
+</body>
+</html>

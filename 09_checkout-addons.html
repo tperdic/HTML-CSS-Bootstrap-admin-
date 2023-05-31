@@ -1,0 +1,314 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Squadtrip</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">	
+<link rel= "stylesheet" href="css/bootstrap-datepicker.min.css" />
+<link href="css/nouislider.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+	
+	<section class="main">
+		
+		<div class="content pb-50">
+			<div class="container-fluid">
+				<div class="row">
+					
+					<div class="col-sm-12 head">
+						<a href="#" class="back"><img src="img/arr_back.svg" alt="img"/> Back</a>
+					</div>
+					
+					
+					<div class="col-md-7 col-lg-9 col-sm-12">
+						<form>
+						<div class="checkout">
+							
+							<h1>Add-ons</h1>
+							<p>Choose any extras you’d like to add to your trip.</p>
+							
+							
+							<div class="module">
+								<div class="line">
+									<h3>Selected (2)</h3>
+									<p>These have been added to your order</p>	
+								</div>
+								
+								<div class="addon_box">
+									<div class="add1">
+										<h4>Airport Shuttle</h4>
+										<p>Airport Transfer</p>
+									</div>
+									<div class="add2">
+										<h4>Details</h4>
+										<p>Two-Way Airport Transfer<br>
+											<a href="#" data-bs-toggle="modal" data-bs-target="#readmore">Read more...</a>
+										</p>
+									</div>
+									<div class="add3">
+										<span>+ $200</span>
+									</div>
+									<div class="add4">
+										<span class="added">Added</span><a href="#" class="remove">Remove</a>
+									</div>
+								</div>
+								
+								<div class="addon_box">
+									<div class="add1">
+										<h4>Meals</h4>
+										<p>All-inclusive meals</p>
+									</div>
+									<div class="add2">
+										<h4>Details</h4>
+										<p>All the meals you can dream of.<br>
+											<a href="#" data-bs-toggle="modal" data-bs-target="#readmore">Read more...</a>
+										</p>
+									</div>
+									<div class="add3">
+										<span>+ $320</span>
+									</div>
+									<div class="add4">
+										<span class="added">Added</span><a href="#" class="remove">Remove</a>
+									</div>
+								</div>
+
+							</div>
+							
+							
+							<div class="module">
+								<div class="line">
+									<h3>Add-on Options</h3>
+									<p>Not sure yet? You can add these after checkout, subject to availability.</p>	
+								</div>
+								
+								<div class="addon_box disabled">
+									<div class="add1">
+										<h4>Flight</h4>
+										<p>LGA - ATG</p>
+									</div>
+									<div class="add2">
+										<h4>Details</h4>
+										<p>Delta flight from LGA to ATG on 3/20/22<br>
+											<a href="#" data-bs-toggle="modal" data-bs-target="#readmore">Read more...</a>
+										</p>
+									</div>
+									<div class="add3">
+										<span>+ $200</span>
+									</div>
+									<div class="add4"><a href="#" class="btn">SOLD OUT</a></div>
+								</div>
+								
+								<div class="addon_box">
+									<div class="add1">
+										<h4>Airport Shuttle</h4>
+										<p>Airport Transfer</p>
+									</div>
+									<div class="add2">
+										<h4>Details</h4>
+										<p>Two-Way Airport Transfer<br>
+											<a href="#" data-bs-toggle="modal" data-bs-target="#readmore">Read more...</a>
+										</p>
+									</div>
+									<div class="add3">
+										<span>+ $200</span>
+									</div>
+									<div class="add4"><a href="#" class="btn">Select</a></div>
+								</div>
+								
+								<div class="addon_box">
+									<div class="add1">
+										<h4>Meals</h4>
+										<p>All-inclusive meals</p>
+									</div>
+									<div class="add2">
+										<h4>Details</h4>
+										<p>All the meals you can dream of.<br>
+											<a href="#" data-bs-toggle="modal" data-bs-target="#readmore">Read more...</a>
+										</p>
+									</div>
+									<div class="add3">
+										<span>+ $320</span>
+									</div>
+									<div class="add4"><a href="#" class="btn">Select</a></div>
+								</div>
+
+							</div>
+							
+								
+								
+								
+						</div><!-- /checkout -->
+						
+						<div class="submits">
+							<input class="btn" type="submit" value="Continue To Payment Options">
+						</div>
+								
+								
+						</form>
+						<div id="swipemark"></div>
+					</div>
+					
+					
+					<div id="fixed" class="col-md-5 col-lg-3 col-sm-12 fixed">
+						<div class="checkout_sidebar box_shadow">
+							<div id="swipe_trigger">
+								<div class="swipe"></div>
+								<h2>Order Summary</h2>
+							</div>
+							<div class="summary">
+								<img src="https://picsum.photos/id/1041/90/73" alt="img">
+								<h3>Trip Package</h3>
+								Bungalow
+								<span>$ 4,200</span>
+							</div>
+							
+							
+							<div class="accordion accordion-flush" id="accordion">
+
+								<div class="col-md-12 summary_acc mt-0 accordion-item" >
+
+									<div class="summary_title accordion-header" id="heading">
+										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse" aria-expanded="false" aria-controls="collapse">
+										<h4>Add-ons</h4></button>	
+									</div>
+
+									<div id="collapse" class=" accordion-collapse collapse show" aria-labelledby="heading" data-bs-parent="#accordion">
+										<div class="accordion-body">
+											<div class="summary_holder">
+												<div class="summary_content">
+													<div class="summary_content_data">
+														<span>Airport Transfer</span>
+														<strong>$ 200</strong>
+													</div>
+													<div class="summary_content_data">
+														<span>Meals</span>
+														<strong>$ 320</strong>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>	
+							</div>
+							
+							<div class="accordion accordion-flush" id="accordion2">
+
+								<div class="col-md-12 summary_acc mt-0 accordion-item" >
+
+									<div class="summary_title accordion-header" id="heading2">
+										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+										<h4>Payment Schedule</h4></button>	
+									</div>
+
+									<div id="collapse2" class=" accordion-collapse collapse show" aria-labelledby="heading2" data-bs-parent="#accordion2">
+										<div class="accordion-body">
+											<div class="summary_holder">
+												<span class="small">Deposit of $300 today and 4 installments of $1,181.75</span>
+												<div class="summary_content">
+													<div class="summary_content_data">
+														<span>First Payment</span>
+														<strong>3/20/2021</strong>
+													</div>
+													<div class="summary_content_data">
+														<span>Last Payment</span>
+														<strong>7/20/2021</strong>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>	
+							</div>
+							
+							
+							<div class="promo input_wrap">
+								<div class="inputs input-group-lg">
+									<label>Promo Code</label>
+									<input type="text" class="form-control">
+									<input type="submit" class="form-control" value="Apply">
+								</div>	
+							</div>
+							
+							
+							<div class="summary_content alt">
+								<div class="summary_content_data">
+									<span>Bungalow Package</span>
+									<strong>$4,200</strong>
+								</div>
+								<div class="summary_content_data">
+									<span>Add-ons</span>
+									<strong>$520</strong>
+								</div>
+								<div class="summary_content_data line2 purple">
+									<span><strong>Discount</strong></span>
+									<strong>- $120</strong>
+								</div>
+								<div class="summary_content_data">
+									<span><strong>Subtotal</strong></span>
+									<strong>$4590</strong>
+								</div>
+								<div class="summary_content_data">
+									<span>Precessing Fee*</span>
+									<strong>$137.70</strong>
+								</div>
+								<div class="summary_content_data sum mt-10">
+									<span><strong>Total</strong></span>
+									<strong>$4,727.70</strong>
+								</div>
+								<div class="summary_content_data sum">
+									<span><strong>Due Today</strong></span>
+									<strong>$309</strong>
+								</div>
+								<span class="small mt-20">* The amount we take today includes our 3% <a href="#">processing fee</a>
+								.</span>
+							</div>
+							
+							
+							<div class="text-center"><img src="img/powered.svg" alt="img"></div>
+							
+						</div>
+					</div>
+					
+					
+					
+					
+					
+					
+					
+				</div>
+			</div>
+		</div>
+		
+		
+		
+	</section>
+
+	
+<div class="modal fade" id="readmore" tabindex="-1" aria-labelledby="readmore" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered ">
+	<div class="modal-content readmore_box">
+		
+		<a href="#" class="close" data-bs-dismiss="modal"></a>
+
+		<p>Aaciti rhoncus taciti praesent sodales nec quis fringilla posuere sociosqu libero ut nam curabitur, libero sociosqu in eros scelerisque nisi aliquam molestie erat rutrum aliquam, viverra ut.<br><br>Lacinia lectus nulla neque vulputate class curae interdum nisi et dictumst pretium turpis, habitant metus aptent, tortor ad scelerisque, malesuada nisi curabitur tempus </p>
+
+	</div>
+  </div>
+</div>	
+	
+
+<script src="js/jquery-3.6.0.min.js"></script>	
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src= "js/bootstrap-datepicker.js" ></script>
+<script src= "js/jquery.jscrollpane.min.js" ></script>
+<script src="js/scripts.js"></script>
+<script src="js/nouislider.js"></script>
+</body>
+</html>

@@ -1,0 +1,364 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Squadtrip</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">	
+<link rel= "stylesheet" href="css/bootstrap-datepicker.min.css" />
+<link href="css/nouislider.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="header alt">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-auto logo alt">
+				  	<a href="#" class="partner"><img src="img/LogoGoesHere.svg" alt="logo"/></a>
+				  	<a href="#"><img src="img/poweredbySquadtrip.svg" alt="logo"/></a>
+				</div>
+				<div class="trigger"></div>
+				<div class="col-md-auto menu_right">
+					<ul>
+						<li><div class="user">
+								<span>Sky Residents</span><img src="https://picsum.photos/id/1041/32/32" alt="img">
+							</div>
+							<ul>
+								<li><a href="#">My Bookings</a></li>
+								<li><a href="#">Settings</a></li>
+								<li><a href="#">Log Out</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="notifications">
+						<li><span class="bell"><span>2</span></span>							
+							<ul>
+								<li class="unseen"><a href="#">Reminder: Answer the registration questions soon.</a></li>
+								<li><a href="#">Here is another notification you should check.</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<section class="main">
+		
+		<div class="content settings_wrap">
+			<div class="container-fluid">
+				<div class="row">
+					
+					
+					<div class="col-sm-12 ">
+						
+						<div class="settings">
+							<h1>Settings</h1>
+							
+							
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-lg-3 col-md-12">
+										<div class="settings_menu">
+											<ul>
+												<li><a href="#">My Profile</a></li>
+												<li><a href="#" class="active">Trip Settings</a></li>
+												<li><a href="#">Notifications</a></li>
+											</ul>
+										</div>
+									</div>		
+									
+									<div class="col-lg-9 col-md-12 settings_content">
+									<form>
+										
+										<h2>Trip settings</h2>
+										
+										<div class="module mb-50">										
+											<div class="input_wrap inp2">
+												<div class="inputs">
+													<label>Select Trip</label>
+													<input type="text" class="form-control " placeholder="" value="Cruising in Costa Rica">
+												</div>		
+											</div>					
+										</div>
+										
+										<h4>Payment Settings</h4>
+										
+										<div class="card_data mt-30">
+										
+										
+											<div class="w50">
+												<label>Card Information</label>
+
+												<div class="input_wrap ">
+													<div class="inputs">
+														<label class="small">Cardholders Name</label>
+														<input type="text" class="form-control ">
+													</div>		
+												</div>
+
+												<div class="input_wrap ">
+													<div class="inputs">
+														<label class="small">Card Number</label>
+														<input type="text" class="form-control ">
+													</div>		
+												</div>
+
+												<div class="input_wrap inp2">
+													<div class="inputs">
+														<label class="small">Expiry</label>
+														<input type="text" class="form-control ">
+													</div>
+													<div class="inputs">
+														<label class="small">CVV</label>
+														<input type="text" class="form-control ">
+													</div>		
+												</div>											
+											</div>
+										
+											<div class="w50">
+												<label>Billing Information</label>
+
+												<div class="input_wrap ">
+													<div class="inputs">
+														<label class="small">Billing Address</label>
+														<input type="text" class="form-control ">
+													</div>		
+												</div>
+
+												<div class="input_wrap inp2">
+													<div class="inputs">
+														<label class="small">City</label>
+														<input type="text" class="form-control ">
+													</div>
+													<div class="inputs">
+														<label class="small">State</label>
+														<input type="text" class="form-control ">
+													</div>		
+												</div>
+
+												<div class="input_wrap inp2">
+													<div class="inputs">
+														<label class="small">Zip Code</label>
+														<input type="text" class="form-control ">
+													</div>
+													<div class="inputs">
+														<label class="small">Country</label>
+														<input type="text" class="form-control ">
+													</div>		
+												</div>
+												<div class="input_wrap">
+													<div class="form-check">
+													  <input class="form-check-input" type="checkbox" name="sv" id="sv">
+													  <label class="form-check-label " for="sv">
+														Save as residential address
+													  </label>
+													</div>
+												</div>
+
+											</div>
+										
+										
+										</div>
+										
+										<span class="note mt-20 mb-50">Note: This is the card that will be charged now and in any upcoming payments.</span>
+										
+										
+										
+										<h4>Registration Questions</h4>
+										
+										<div class="white_holder">
+										<div class="module">
+										<label>What is your favorite drink?</label>
+
+										<div class="input_wrap short">
+											<div class="inputs">
+												<div class="form-check">
+												  <input checked class="form-check-input" type="radio" name="drink" id="drink1">
+												  <label class="form-check-label" for="drink1">
+													Rum
+												  </label>
+												</div>
+												<div class="form-check">
+												  <input class="form-check-input" type="radio" name="drink" id="drink2">
+												  <label class="form-check-label" for="drink2">
+													Whisky
+												  </label>
+												</div>
+												<div class="form-check">
+												  <input class="form-check-input" type="radio" name="drink" id="drink3">
+												  <label class="form-check-label" for="drink3">
+													Vodka
+												  </label>
+												</div>
+												<div class="form-check">
+												  <input class="form-check-input" type="radio" name="drink" id="drink4">
+												  <label class="form-check-label" for="drink4">
+													Wine
+												  </label>
+												</div>
+											</div>	
+										</div>		
+									
+									</div></div>
+									<div class="white_holder">
+										<div class="module">
+										<label>Do you have any allergies?</label>
+
+										<div class="input_wrap ">
+											<div class="inputs">
+												<div class="form-check">
+												  <input checked class="form-check-input" type="radio" name="alergies" id="alergies1">
+												  <label class="form-check-label" for="alergies1">
+													None
+												  </label>
+												</div>
+												<div class="form-check">
+												  <input class="form-check-input" type="radio" name="alergies" id="alergies2">
+												  <label class="form-check-label" for="alergies2">
+													Yes, my allergies are:
+												  </label>
+												</div>
+											</div>	
+										</div>	
+										<div class="input_wrap short">	
+											<div class="inputs">
+												<input disabled type="text" class="form-control" placeholder="">
+											</div>
+										</div>	
+										</div>
+									</div>	
+										
+									
+									<div class="white_holder">
+									<div class="module">
+										<label>Which type of accomodation do you prefer?</label>
+
+										<div class="input_wrap short">
+											<div class="inputs">
+												<div class="form-check">
+												  <input checked class="form-check-input" type="radio" name="type" id="type1">
+												  <label class="form-check-label" for="type1">
+													Villas
+												  </label>
+												</div>
+												<div class="form-check">
+												  <input class="form-check-input" type="radio" name="type" id="type2">
+												  <label class="form-check-label" for="type2">
+													Hotels
+												  </label>
+												</div>
+												<div class="form-check">
+												  <input class="form-check-input" type="radio" name="type" id="type3">
+												  <label class="form-check-label" for="type3">
+													Apartments
+												  </label>
+												</div>
+												<div class="form-check">
+												  <input class="form-check-input" type="radio" name="type" id="type4">
+												  <label class="form-check-label" for="type4">
+													No preference
+												  </label>
+												</div>
+											</div>	
+										</div>		
+									</div>	
+									</div>
+										
+									<br><br>
+									<input class="btn" type="submit" value="Save Changes">
+											
+											
+										
+									</form>
+									</div>										
+								</div>
+							</div>
+								
+								
+								
+						</div><!-- /settings -->
+								
+								
+						
+						
+					</div>
+				</div>
+			</div>
+
+		</div>
+		
+		
+	</section>
+
+	
+<div class="modal fade" id="change-pass" tabindex="-1" aria-labelledby="change-pass" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered ">
+	<div class="modal-content readmore_box">
+		
+		<a href="#" class="close" data-bs-dismiss="modal"></a>
+		
+		<div class="password">
+			<h2>Change Password</h2>
+			<p>Your new password must be different to previously used passwords.</p>
+			<form>
+				<div class="ver_success">										
+					<i class="eye" id="togglePassword1"></i>
+					<input type="password" class="form-control " placeholder="Password" id="pass1">
+					<span class="desc">Password must be at least 8 characters</span>										
+				</div>
+
+				<div class="ver_success">	
+					<i class="eye" id="togglePassword2"></i>
+					<input type="password" class="form-control " placeholder="Confirm Password" id="pass2">		
+					<span class="desc">Both passwords must match</span>
+				</div>	
+
+				<div class="submits">
+					<input class="btn" type="submit" value="Update Password"><br>
+					<a href="#" class="btn btn-white">Cancel</a>
+				</div>
+			</form>
+		</div>
+	</div>
+  </div>
+</div>	
+	
+
+<script src="js/jquery-3.6.0.min.js"></script>	
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src= "js/bootstrap-datepicker.js" ></script>
+<script src= "js/jquery.jscrollpane.min.js" ></script>
+<script src="js/scripts.js"></script>
+<script src="js/nouislider.js"></script>
+<script>
+const togglePassword = document.querySelector('#togglePassword');
+const password = document.querySelector('#pass');
+
+togglePassword.addEventListener('click', function (e) {
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+});
+
+//modal scripts
+const togglePassword1 = document.querySelector('#togglePassword1');
+const password1 = document.querySelector('#pass1');
+const togglePassword2 = document.querySelector('#togglePassword2');
+const password2 = document.querySelector('#pass2');
+
+togglePassword1.addEventListener('click', function (e) {
+    const type1 = password1.getAttribute('type') === 'password' ? 'text' : 'password';
+    password1.setAttribute('type', type1);
+});
+togglePassword2.addEventListener('click', function (e) {
+    const type2 = password2.getAttribute('type') === 'password' ? 'text' : 'password';
+    password2.setAttribute('type', type2);
+});
+	
+</script>
+</body>
+</html>

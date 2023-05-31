@@ -1,0 +1,540 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Squadtrip</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">	
+<link rel= "stylesheet" href="css/bootstrap-datepicker.min.css" />
+<link href="css/nouislider.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+	
+	<section class="main">
+		
+		<div class="content pb-50 settings_wrap">
+			<div class="container-fluid">
+				<div class="row">
+					
+					<div class="col-sm-12 head">
+						<a href="#" class="back"><img src="img/arr_back.svg" alt="img"/> Back</a>
+					</div>
+					
+					
+					<div class="col-md-12 col-lg-4 col-sm-12 ">
+						<div class="checkout_sidebar box_shadow">
+							
+							<div class="sidebar_bookings_holder">
+								<div class="bookings bookings3 bookingsfull">	
+									<div class="bookings_img">
+										<img src="https://picsum.photos/id/1051/660/500" alt="img">
+
+										<div class="bookings_img_title">
+											<h3>Trip Package Name</h3>
+											<span>City, Country | Jul 13 - Jul 19, 2022 </span>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="accordion accordion-flush" id="accordion">
+
+								<div class="col-md-12 summary_acc mt-0 accordion-item" >
+
+									<div class="summary_title accordion-header" id="heading">
+										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse" aria-expanded="false" aria-controls="collapse">
+										<h4>Add-ons</h4></button>	
+									</div>
+
+									<div id="collapse" class=" accordion-collapse collapse " aria-labelledby="heading" data-bs-parent="#accordion">
+										<div class="accordion-body">
+											<div class="summary_holder">
+												<div class="summary_content">
+													<div class="summary_content_data">
+														<span>Airport Transfer</span>
+														<strong>$ 200</strong>
+													</div>
+													<div class="summary_content_data">
+														<span>Meals</span>
+														<strong>$ 320</strong>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>	
+							</div>
+							
+							<div class="accordion accordion-flush" id="accordion2">
+
+								<div class="col-md-12 summary_acc mt-0 accordion-item" >
+
+									<div class="summary_title accordion-header" id="heading2">
+										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+										<h4>Payment Schedule</h4></button>	
+									</div>
+
+									<div id="collapse2" class=" accordion-collapse collapse " aria-labelledby="heading2" data-bs-parent="#accordion2">
+										<div class="accordion-body">
+											<div class="summary_holder">
+												<span class="small">Deposit of $300 today and 4 installments of $1,181.75</span>
+												<div class="summary_content">
+													<div class="summary_content_data">
+														<span>First Payment</span>
+														<strong>3/20/2021</strong>
+													</div>
+													<div class="summary_content_data">
+														<span>Last Payment</span>
+														<strong>7/20/2021</strong>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>	
+							</div>
+							
+							
+							<div class="summary_content alt mt-15">
+								<div class="summary_content_data">
+									<span>Bungalow Package</span>
+									<strong>$4,200</strong>
+								</div>
+								<div class="summary_content_data">
+									<span>Add-ons</span>
+									<strong>$520</strong>
+								</div>
+								<div class="summary_content_data line2 purple">
+									<span><strong>Discount</strong></span>
+									<strong>- $120</strong>
+								</div>
+								<div class="summary_content_data">
+									<span><strong>Subtotal</strong></span>
+									<strong>$4590</strong>
+								</div>
+								<div class="summary_content_data">
+									<span>Precessing Fee*</span>
+									<strong>$137.70</strong>
+								</div>
+								<div class="summary_content_data sum mt-10">
+									<span><strong>Total</strong></span>
+									<strong>$4,727.70</strong>
+								</div>
+								<span class="small mt-20 centered">Paid to Date: $700<br>Remaining Balance: $3,500 </span>
+							</div>
+							
+						</div>
+							
+						<div class="submits profile">
+							<a href="#" class="btn">Contact the Organizer</a><br>
+							<a href="#" class="btn btn-white">Cancel My Booking</a>
+						</div>
+						
+					</div>
+					
+					
+					<div class="col-md-12 col-lg-8 col-sm-12">
+						
+						<h1>Payments</h1>
+						
+						
+						<div class="sorting">
+							<a href="#" class="active">All</a>
+							<a href="#">Paid</a>
+							<a href="#">Unpaid</a>
+							<a href="#">Overdue</a>
+						</div>
+						
+						
+						<div class="payment_tab_holder">
+						<div class="payment_tab">
+							
+							<div class="payment_tab_row t_prehead">
+								<div>
+									Overdue: $400 USD
+								</div>
+								<div>
+									Next Payment - $315.85 charged to *3342 on Dec 10th
+								</div>
+								<div>
+									<a href="#" class="btn">Make New Payment</a>
+								</div>
+							</div>
+							
+							<div class="payment_tab_row t_head">
+								<div class="payment_tab_1">
+									#
+								</div>
+								<div class="payment_tab_2">
+									Payment Status
+								</div>
+								<div class="payment_tab_3">
+									Amount
+								</div>
+								<div class="payment_tab_4">
+									Receipt
+								</div>
+								<div class="payment_tab_5">
+									Actions
+								</div>
+							</div>
+							
+							<div class="payment_tab_row failed">
+								<div class="payment_tab_1">
+									1
+								</div>
+								<div class="payment_tab_2">
+									<span class="status failed">Failed</span> <span class="status overdue">Overdue</span><br>
+									<p>Due on 10/10/2021</p>
+								</div>
+								<div class="payment_tab_3">
+									<strong>$400</strong>USD
+								</div>
+								<div class="payment_tab_4">
+									<a href="#"><img src="img/receipt.svg" alt="img"></a>
+								</div>
+								<div class="payment_tab_5">
+									<a href="#" class="btn btn-white">Retry Payment</a>
+								</div>
+							</div>
+							
+							<div class="payment_tab_row">
+								<div class="payment_tab_1">
+									2
+								</div>
+								<div class="payment_tab_2">
+									<span class="status paid">Paid</span> <br>
+									<p>Paid on 10/10/2021</p>
+								</div>
+								<div class="payment_tab_3">
+									<strong>$400</strong>USD
+								</div>
+								<div class="payment_tab_4">
+									<a href="#"><img src="img/receipt.svg" alt="img"></a>
+								</div>
+								<div class="payment_tab_5">
+									
+								</div>
+							</div>
+							
+							<div class="payment_tab_row">
+								<div class="payment_tab_1">
+									3
+								</div>
+								<div class="payment_tab_2">
+									<span class="status paid">Paid</span> <br>
+									<p>Paid on 10/10/2021</p>
+								</div>
+								<div class="payment_tab_3">
+									<strong>$400</strong>USD
+								</div>
+								<div class="payment_tab_4">
+									<a href="#"><img src="img/receipt.svg" alt="img"></a>
+								</div>
+								<div class="payment_tab_5">
+									
+								</div>
+							</div>
+							
+							<div class="payment_tab_row">
+								<div class="payment_tab_1">
+									4
+								</div>
+								<div class="payment_tab_2">
+									<span class="status paid">Paid</span> <br>
+									<p>Paid on 10/10/2021</p>
+								</div>
+								<div class="payment_tab_3">
+									<strong>$400</strong>USD
+								</div>
+								<div class="payment_tab_4">
+									<a href="#"><img src="img/receipt.svg" alt="img"></a>
+								</div>
+								<div class="payment_tab_5">
+									
+								</div>
+							</div>
+							
+							<div class="payment_tab_row">
+								<div class="payment_tab_1">
+									5
+								</div>
+								<div class="payment_tab_2">
+									<span class="status paused">Paused</span> <br>
+									<p>Due on 10/10/2021</p>
+								</div>
+								<div class="payment_tab_3">
+									<strong>$400</strong>USD
+								</div>
+								<div class="payment_tab_4">
+									<a href="#"><img src="img/receipt.svg" alt="img"></a>
+								</div>
+								<div class="payment_tab_5">
+									<a href="#" class="btn btn-white">Pay Now</a>
+								</div>
+							</div>
+							
+							<div class="payment_tab_row">
+								<div class="payment_tab_1">
+									6
+								</div>
+								<div class="payment_tab_2">
+									<span class="status cancelled">Cancelled</span> <br>
+									<p>Due on 10/10/2021</p>
+								</div>
+								<div class="payment_tab_3">
+									<strong>$400</strong>USD
+								</div>
+								<div class="payment_tab_4">
+									<a href="#"><img src="img/receipt.svg" alt="img"></a>
+								</div>
+								<div class="payment_tab_5">
+									
+								</div>
+							</div>
+							
+							<div class="payment_tab_row">
+								<div class="payment_tab_1">
+									7
+								</div>
+								<div class="payment_tab_2">
+									<span class="status cancelled">Cancelled</span> <br>
+									<p>Due on 10/10/2021</p>
+								</div>
+								<div class="payment_tab_3">
+									<strong>$400</strong>USD
+								</div>
+								<div class="payment_tab_4">
+									<a href="#"><img src="img/receipt.svg" alt="img"></a>
+								</div>
+								<div class="payment_tab_5">
+									
+								</div>
+							</div>
+							
+							<div class="payment_tab_row">
+								<div class="payment_tab_1">
+									8
+								</div>
+								<div class="payment_tab_2">
+									<span class="status cancelled">Cancelled</span> <br>
+									<p>Due on 10/10/2021</p>
+								</div>
+								<div class="payment_tab_3">
+									<strong>$400</strong>USD
+								</div>
+								<div class="payment_tab_4">
+									<a href="#"><img src="img/receipt.svg" alt="img"></a>
+								</div>
+								<div class="payment_tab_5">
+									
+								</div>
+							</div>
+							
+							<div class="payment_tab_row">
+								<div class="payment_tab_1">
+									9
+								</div>
+								<div class="payment_tab_2">
+									<span class="status scheduled">Scheduled Autopay</span> <br>
+									<p>Due on 10/10/2021</p>
+								</div>
+								<div class="payment_tab_3">
+									<strong>$400</strong>USD
+								</div>
+								<div class="payment_tab_4">
+									<a href="#"><img src="img/receipt.svg" alt="img"></a>
+								</div>
+								<div class="payment_tab_5">
+									<a href="#" class="btn btn-white">Pause Schedule Payment</a> <a href="#" class="btn btn-white">Pay Now</a>
+								</div>
+							</div>
+							
+							<div class="payment_tab_row">
+								<div class="payment_tab_1">
+									10
+								</div>
+								<div class="payment_tab_2">
+									<span class="status scheduled">Scheduled Autopay</span> <br>
+									<p>Due on 10/10/2021</p>
+								</div>
+								<div class="payment_tab_3">
+									<strong>$400</strong>USD
+								</div>
+								<div class="payment_tab_4">
+									<a href="#"><img src="img/receipt.svg" alt="img"></a>
+								</div>
+								<div class="payment_tab_5">
+									<a href="#" class="btn btn-white">Pause Schedule Payment</a> <a href="#" class="btn btn-white">Pay Now</a>
+								</div>
+							</div>
+							
+							<div class="payment_tab_row t_foot">
+								<div>
+									Rows per page: <select class="form-select  form-select-sm inline" aria-label="select ">
+													  <option value="1">10</option>
+													  <option value="2">25</option>
+													  <option value="3">50</option>
+													</select>
+									<span>1-10 of 17</span>
+									<a href="#"><img src="img/arrl.svg" alt="img"></a>
+									<a href="#"><img src="img/arrr.svg" alt="img"></a>
+								</div>
+							</div>
+							
+						</div> <!-- /payment_tab -->
+						</div>
+						
+						<div class="checkout">
+							
+							
+							<div class="module">
+								<div class="line line-alt">
+									<h2>Add-ons</h2>
+									<p><strong>Purchased Add-ons</strong></p>	
+								</div>
+								
+								<div class="addon_box">
+									<div class="add1">
+										<h4>Airport Shuttle</h4>
+										<p>Airport Transfer</p>
+									</div>
+									<div class="add2">
+										<h4>Details</h4>
+										<p>Two-Way Airport Transfer</p>
+									</div>
+									<div class="add3">
+										<span>+ $200</span>
+									</div>
+									<div class="add4">
+									</div>
+								</div>
+								
+								<div class="addon_box">
+									<div class="add1">
+										<h4>Meals</h4>
+										<p>All-inclusive meals</p>
+									</div>
+									<div class="add2">
+										<h4>Details</h4>
+										<p>All the meals you can dream of.</p>
+									</div>
+									<div class="add3">
+										<span>+ $320</span>
+									</div>
+									<div class="add4">
+									</div>
+								</div>
+
+							</div>
+							
+							
+							<div class="module">
+								<div class="line line-alt">
+									<p><strong>Available Add-ons</strong></p>	
+								</div>
+								
+								<div class="addon_box disabled">
+									<div class="add1">
+										<h4>Flight</h4>
+										<p>LGA - ATG</p>
+									</div>
+									<div class="add2">
+										<h4>Details</h4>
+										<p>Delta flight from LGA to ATG on 3/20/22<br>
+											<a href="#" data-bs-toggle="modal" data-bs-target="#readmore">Read more...</a>
+										</p>
+									</div>
+									<div class="add3">
+										<span>+ $200</span>
+									</div>
+									<div class="add4"><a href="#" class="btn">SOLD OUT</a></div>
+								</div>
+								
+								<div class="addon_box">
+									<div class="add1">
+										<h4>Airport Shuttle</h4>
+										<p>Airport Transfer</p>
+									</div>
+									<div class="add2">
+										<h4>Details</h4>
+										<p>Two-Way Airport Transfer<br>
+											<a href="#" data-bs-toggle="modal" data-bs-target="#readmore">Read more...</a>
+										</p>
+									</div>
+									<div class="add3">
+										<span>+ $200</span>
+									</div>
+									<div class="add4"><a href="#" class="btn">Buy Now</a></div>
+								</div>
+								
+								<div class="addon_box">
+									<div class="add1">
+										<h4>Meals</h4>
+										<p>All-inclusive meals</p>
+									</div>
+									<div class="add2">
+										<h4>Details</h4>
+										<p>All the meals you can dream of.<br>
+											<a href="#" data-bs-toggle="modal" data-bs-target="#readmore">Read more...</a>
+										</p>
+									</div>
+									<div class="add3">
+										<span>+ $320</span>
+									</div>
+									<div class="add4"><a href="#" class="btn">Buy Now</a></div>
+								</div>
+
+							</div>
+							
+								
+								
+								
+						</div><!-- /checkout -->
+						
+						
+
+					</div>
+					
+					
+					
+					
+					
+					
+					
+				</div>
+			</div>
+		</div>
+		
+		
+		
+	</section>
+	
+	
+<div class="modal fade" id="readmore" tabindex="-1" aria-labelledby="readmore" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered ">
+	<div class="modal-content readmore_box">
+		
+		<a href="#" class="close" data-bs-dismiss="modal"></a>
+
+		<p>Aaciti rhoncus taciti praesent sodales nec quis fringilla posuere sociosqu libero ut nam curabitur, libero sociosqu in eros scelerisque nisi aliquam molestie erat rutrum aliquam, viverra ut.<br><br>Lacinia lectus nulla neque vulputate class curae interdum nisi et dictumst pretium turpis, habitant metus aptent, tortor ad scelerisque, malesuada nisi curabitur tempus </p>
+
+	</div>
+  </div>
+</div>
+	
+
+<script src="js/jquery-3.6.0.min.js"></script>	
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src= "js/bootstrap-datepicker.js" ></script>
+<script src= "js/jquery.jscrollpane.min.js" ></script>
+<script src="js/scripts.js"></script>
+<script src="js/nouislider.js"></script>
+</body>
+</html>
